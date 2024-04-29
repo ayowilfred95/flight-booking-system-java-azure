@@ -1,0 +1,12 @@
+# Compiled class files
+target/
+
+# Maven build directory
+mvn/
+
+# IDE-specific files
+*.iml
+*.ipr
+*.iws
+.idea/
+
