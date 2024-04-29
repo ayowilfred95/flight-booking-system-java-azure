@@ -1,3 +1,4 @@
+```markdown
 #### Set up your Azure environment
 
 **Completed**
@@ -194,4 +195,16 @@ https://learn.microsoft.com/en-us/training/modules/containerize-deploy-java-app-
 
 ```bash
 az aks update -n name-of-the-cluster -g name-of-the-resource-group --attach-acr name-of-the-acr
+```
+
+
+## Clean up resources
+
+In this module, you created Azure resources in a resource group. If you won't need these resources later, delete the resource group from the Azure portal or run the following command in Azure Cloud Shell:
+
+```bash
+az group delete --name $AZ_RESOURCE_GROUP --yes
+```
+
+This command might take a minute to run.
 ```
