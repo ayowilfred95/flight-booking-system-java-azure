@@ -1,5 +1,3 @@
-Learn  Training  Browse  Get started with Java on Azure  Containerize and deploy a Java app to Azure 
-
 #### Set up your Azure environment
 
 **Completed**
