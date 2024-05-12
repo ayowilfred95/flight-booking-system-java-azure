@@ -28,7 +28,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        file: ./Dockerfile
+        file: ./Project/Airlines/Dockerfile
         push: true
         tags: ${{ secrets.ACR_NAME }}.azurecr.io/yourbackendapp:latest
     - name: Connect to AKS
@@ -39,4 +39,4 @@ jobs:
         resource-group: aks-getting-started
 
     - name: Deploy to AKS
-      run: kubectl apply -f k8s/
+      run: kubectl apply -f ./Project/Airlines/deployment
