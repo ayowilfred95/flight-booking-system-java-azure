@@ -1,11 +1,4 @@
-```markdown
 #### Set up your Azure environment
-
-**Completed**
-
-**100 XP**
-
-**6 minutes**
 
 In this unit, you'll use the Azure CLI to create the Azure resources that will be needed in later units. Before you start entering commands, make sure Docker Desktop is installed and running.
 
@@ -47,7 +40,7 @@ Replace `<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>` with a unique valu
 
 ```bash
 AZ_RESOURCE_GROUP=javacontainerizationdemorg
-AZ_CONTAINER_REGISTRY=<YOUR_CONTAINER_REGISTRY>
+AZ_CONTAINER_REGISTRY=flightbookingsystemregistry
 AZ_KUBERNETES_CLUSTER=javacontainerizationdemoaks
 AZ_LOCATION=<YOUR_AZURE_REGION>
 AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>
@@ -206,5 +199,3 @@ In this module, you created Azure resources in a resource group. If you won't ne
 az group delete --name $AZ_RESOURCE_GROUP --yes
 ```
 
-This command might take a minute to run.
-```

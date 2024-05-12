@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flightbookingsystemsample
-        image: AZ_CONTAINER_REGISTRY.azurecr.io/ayowilfred95/flightbookingsystemsample
+        image: flightbookingsystemregistry.azurecr.io/ayowilfred95/flightbookingsystemsample
         imagePullPolicy: Always
         resources:
           requests:
