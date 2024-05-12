@@ -35,8 +35,8 @@ jobs:
       uses: azure/aks-set-context@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-        cluster-name: <your-cluster-name>
-        resource-group: <your-resource-group>
+        cluster-name: javacontainerizationdemoaks
+        resource-group: aks-getting-started
 
     - name: Deploy to AKS
       run: kubectl apply -f k8s/
